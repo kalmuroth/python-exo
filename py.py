@@ -9,7 +9,7 @@ def uno():
         else : 
             print ('negatif')
     except:
-        print ('tu es débile')
+        print ('faux')
 
 def dos():
     inputUn = input('Donne moi chiffre\n')
@@ -21,7 +21,7 @@ def dos():
             i+=1
         print(test)
     except:
-        print ('tu es débile')
+        print ('faux')
 
 def tres():
     test = 0
@@ -52,7 +52,7 @@ def seis():
             if (n[i] > test):
                     print(n[i])
     except:
-        print ('tu es débile')
+        print ('faux')
 
 def siete():
     vectorUno=np.array([1,2,3,4,5])
@@ -64,3 +64,42 @@ def ocho():
     array = [1,2,3,4,5,6,7]
     array.sort()
     print(array)
+
+def niete():
+    inputUn = input('Donne moi chiffre\n')
+    i=1
+    test=1
+    try :
+        while(int(inputUn) >= i):
+            test = test * i
+            i+=1
+        print(test)
+    except:
+        print ('faux')
+
+def diez():
+    matriceUn= [ [2, 2, 2], [2, 2, 2] ]
+    matriceDeux = [ [2, 2, 2], [2, 2, 2] ]
+    n=len(matriceUn)
+    m=len(matriceUn[0]) 
+    fusion = [[0]*m for i in range(n)] 
+    for i in range(n):
+        for j in range(m):
+            fusion[i][j]= matriceUn[i][j] + matriceDeux[i][j]
+
+    print("Fusion des deux matrices : ", fusion)
+
+def eleven():
+    base = 10
+    f0 = 0
+    f1 = 1
+    print("La suite fibonacci est :")
+    print(f0, ",", f1, end=" , ")
+    
+    for i in range(2, base):
+        suivant = f0 + f1
+        print(suivant, end=" , ")
+        f0 = f1
+        f1 = suivant
+        
+def twelve(): 
