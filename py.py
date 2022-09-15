@@ -101,5 +101,11 @@ def eleven():
         print(suivant, end=" , ")
         f0 = f1
         f1 = suivant
-        
+
 def twelve(): 
+    k = int(input('Donne moi chiffre\n'))
+    i = 0
+    x = 1
+    while (k >= i):
+        i = 1/x + i
+        x+=1
